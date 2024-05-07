@@ -29,5 +29,5 @@ App for the purchase of sneakers. Supports payment with QR, MercadoPago and PayP
 
 ## 💻 **Deploy**
 ```
-https://sneakers-xxre.vercel.app/
+https://e-commers-client.onrender.com/
 ```
