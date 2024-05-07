@@ -143,7 +143,7 @@ export default function Home() {
         <article className={classCol}>
           {
             currentProduct ?
-              <div className="bg-gray-200 dark:bg-slate-900">
+              <div className="bg-gray-200">
                 <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
   
                   <div className={gridCols}>
