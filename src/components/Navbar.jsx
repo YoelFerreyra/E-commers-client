@@ -46,6 +46,14 @@ const NavBar = ({
     toggleDarkMode
       ? (localStorage.theme = "dark")
       : (localStorage.theme = "light");
+      /*
+      <div class="dark:text-white">
+                    <label for="one">
+                      <input id="one" type="checkbox" onClick={changeDarkMode}/>
+                      Toggle switch
+                    </label>
+      </div>
+      */
   };
 
   const To = (props) => history.push("/" + props ? props : null);
@@ -387,12 +395,6 @@ const NavBar = ({
                       Iniciar sesión
                     </button>
                   )}
-                  <div class="dark:text-white">
-                    <label for="one">
-                      <input id="one" type="checkbox" onClick={changeDarkMode}/>
-                      Toggle switch
-                    </label>
-                  </div>
                 </div>
                 <div className="flex lg:hidden">
                   <button
