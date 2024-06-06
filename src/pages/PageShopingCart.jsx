@@ -161,9 +161,9 @@ function PageShopingCart() {
                       <p className="text-2xl leading-normal text-gray-800">Total</p>
                       <p className="text-2xl font-bold leading-normal text-right text-gray-800">${total}</p>
                     </div>
-                    <button onClick={(e) => handleCheckout(e)} disabled={!cartItem.length} className="text-base leading-none w-full py-5 bg-gray-800 border-gray-800 border focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-white">
+                    <button onClick={(e) => handleCheckout(e)} disabled={!cartItem.length} className="text-base leading-none w-full py-5 bg-gray-800 border-gray-800 border focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-white flex items-center justify-center space-x-2">
                       Comprar
-                      <img src={mercadopago} alt="" className="w-6 h-6" />
+                      <img src={mercadopago} alt="" className="w-8 h-8" />
                     </button>
                     {user && (user.emailVerified && <div>
                       <div className="w-full flex items-center justify-between py-5">
