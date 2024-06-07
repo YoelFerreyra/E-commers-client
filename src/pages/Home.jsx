@@ -153,7 +153,7 @@ export default function Home() {
                         r.stock === 0 ?
                           <Card setProduct={setProduct} toggle={toggle} onClick={onClick} id={r.id} key={r.id} title={r.title} image={r.image} brand={r.brand} model={r.model} price={r.price} product={r} stock={r.stock} sold={r.sold} wishlist={r.wishlist} sinStock={sinStock} /> :
                           <Card setProduct={setProduct} toggle={toggle} onClick={onClick} id={r.id} key={r.id} title={r.title} image={r.image} brand={r.brand} model={r.model} price={r.price} product={r} stock={r.stock} sold={r.sold} wishlist={r.wishlist} />
-                      ): Loading()
+                      ): <Loading />
                     }
                   </div>
                 </div>
