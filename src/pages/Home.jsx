@@ -22,6 +22,7 @@ import { Carrousel } from "../components/Carrousel";
 import QuickView from "../components/QuickView";
 import Modal from "../components/Modal";
 import FilterPrice from "../components/FilterPrice";
+import Loading from "../components/Loading";
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -148,11 +149,11 @@ export default function Home() {
   
                   <div className={gridCols}>
                     {
-                      currentProduct.map((r) =>
+                      currentProduct && currentProduct.length ? currentProduct.map((r) =>
                         r.stock === 0 ?
                           <Card setProduct={setProduct} toggle={toggle} onClick={onClick} id={r.id} key={r.id} title={r.title} image={r.image} brand={r.brand} model={r.model} price={r.price} product={r} stock={r.stock} sold={r.sold} wishlist={r.wishlist} sinStock={sinStock} /> :
                           <Card setProduct={setProduct} toggle={toggle} onClick={onClick} id={r.id} key={r.id} title={r.title} image={r.image} brand={r.brand} model={r.model} price={r.price} product={r} stock={r.stock} sold={r.sold} wishlist={r.wishlist} />
-                      )
+                      ): Loading()
                     }
                   </div>
                 </div>
